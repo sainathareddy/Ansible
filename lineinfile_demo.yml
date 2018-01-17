@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  tasks: 
+    - lineinfile:
+        path: /home/ansible/myfile
+        regexp: '^hostname*'
+        line: 'hostname=localhost'    
